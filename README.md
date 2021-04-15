@@ -1,2 +1,2 @@
 # SiteExemplo
- Primeiro site crriado para texte
+ Primeiro site criado para teste.
