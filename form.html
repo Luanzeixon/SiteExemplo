@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+    body{
+        background: linear-gradient(-110deg, white 50%,rgb(20, 255, 243) 50%);
+        height: 70vh;
+    }
+    #span h1{
+        color: white;
+        position: absolute;
+        left: 500px;
+    }
+    .collapse a{
+        padding: 10px;
+        
+    }
+    .scrollspy-example{
+        position: relative;
+        overflow: auto;
+        height: 330px;
+    }
+    
+</style>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">  <!-- cabeçalho-->
+        <div class="bg-dark p-4">
+          <a class="text-white h4" href="index.html">Inicio</a>
+          <a class="text-white h4" href="Quiz.html">Quiz</a>
+          <a class="text-white h4" href="Tabela.html">Tabela de Avaliação</a>
+          <a class="text-white h4" href="Form.html">Cadastro</a>
+          <hr style="color: white;">
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark" id="span">
+          <img src="img/potter-png-4.png" style="width: 50px; position: absolute; left: 100px;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-md-4">
+            <h3 style="text-align: center; font-size: 30pt;" class="display-4" >Menu</h3>
+            <div class="list-group text-center">   <!-- cria uma lista de links -->
+              <a href="index.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Inicio</a>
+              <a href="Quiz.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35); ">Quiz</a>
+              <a href="Tabela.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Tabela</a>
+              <a href="Pagina1.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Formulário</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <h1 class="display-4" style="text-align: center;">Apenas</h1>
+              <h1 class="display-4" style="text-align: center;">Um form</h1>
+              <p style="text-align: center;">Um teste de formulário :)</p>
+          </div>
+          <div class="col-md-4">
+            <h3 style="text-align: center; font-size: 30pt;" class="display-4" >Social</h3>
+            <div class="list-group text-center">   <!-- cria uma lista de links -->
+              <a href="" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">LinkedIn</a>
+              <a href="" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35); ">Github</a>
+              <a href="" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Instagram</a>
+            </div>
+            </div>
+          </div>
+      </div>
+      <hr>
+  </div>
+    <div class="container-fluid">
+        <div class="row form-cadastro justify-content-center">
+            <div class="col-md-4 align-self-center area-form">
+                <div class="row justify-content-center">
+                    <img src="img/login.png" style="width: 200px;">
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom01" class="display-6">Primeiro nome</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom02" class="display-6">Sobrenome</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome"  required>
+                        <div class="valid-feedback">
+                          Tudo certo!
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustomUsername" class="display-6">Usuário</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Por favor, escolha um nome de usuário.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom03" class="display-6">Cidade</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+                        <div class="invalid-feedback">
+                          Por favor, informe uma cidade válida.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom04" class="display-6">Estado</label>
+                        <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
+                        <div class="invalid-feedback">
+                          Por favor, informe um estado válido.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom05" class="display-6">CEP</label>
+                        <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+                        <div class="invalid-feedback">
+                          Por favor, informe um CEP válido.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Concordo com os termos e condições
+                        </label>
+                        <div class="invalid-feedback">
+                          Você deve concordar, antes de continuar.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </form>
+                  <script>
+                      //Scrip do propio site boostrap!!!!
+                        (function() {
+                            'use strict';
+                            window.addEventListener('load', function() {
+                            // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Faz um loop neles e evita o envio
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                                        }
+                            form.classList.add('was-validated');
+                            }, false);
+                            });
+                        }, false);
+                        })();
+                  </script>
+            </div>
+        </div>
+    </div>
+    <footer> <!-- o rodapé -->
+        <hr>
+        <h1 class="display-4" style="text-align: center; font-size: 20pt;">&copy; Luan Saturnino</h1>
+      </footer>
+    
+</body>
+</html>

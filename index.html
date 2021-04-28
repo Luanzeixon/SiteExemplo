@@ -1,0 +1,516 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewpoint" content="width=device-width, initial-scale=1" >
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://genfavicon.com/tmp/icon_2b867c04d2f2e5169b29e0982cf05190.ico">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" src="script.js" crossorigin="anonymous" ></script>
+<style> 
+    a{
+        text-decoration: none;
+    }
+    body{
+        background: linear-gradient(-110deg, white 50%,rgb(20, 255, 243) 50%);
+        height: 70vh;
+    }
+    .img-area img{
+        width: 200px;
+        height: 200px;
+    }
+    .container{
+        margin-top: 5%;
+    }
+    .img-text{
+        width: 100%;
+        height: 400px;
+        display: block;
+        text-align: center;
+        padding: 40% 5%;
+        background: rgb(36, 35, 35);
+        color: #fff;
+        border-radius: 15px;
+    }
+    .img-text h2{
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        top: 75px;
+    }
+    .img-text p{
+        font-size: 14px;
+        position: relative;
+        top: 80px;
+    }
+    .single-box{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .img-area{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border: 5px solid #fff;
+        overflow: hidden;
+        border-radius: 90%;
+    }
+    .carousel-indicators{
+        left: 0;
+        top: auto;
+        bottom: -10px;
+    }
+    .carousel-indicators button{ /*Botão quando não ativo*/
+        margin: 3px;
+        background: none;
+        width: 40px;
+        height: 8px;
+    }
+    .carousel-indicators .active{ /*Botão quando ativo*/
+        background:rgb(0, 0, 0);
+        
+    }
+    .carousel-control-prev{ /*Seta da esquerda*/
+        background: none;
+        border: none;
+        position: absolute;
+        left: -70px;
+    }
+    .carousel-control-next{ /*Seta da direita*/
+        background: none;
+        border: none;
+        position: absolute;
+        left: 1020px;
+    }
+    #span h1{
+        color: white;
+        position: absolute;
+        left: 500px;
+    }
+    .img-text a{
+        text-decoration: none;
+        color: white;
+    }
+    .img-text a:hover{
+        color:rgb(20, 255, 243);
+    }
+    .collapse a{
+        padding: 10px;
+        
+    }
+    .scrollspy-example{
+        position: relative;
+        overflow: auto;
+        height: 330px;
+    }
+    .text-center .img-responsive {
+        margin: 0 auto;
+}
+</style>
+<script>
+    $('scrollspy-example').scrollspy({ target: '#navbar-example' })
+    function mudarFoto(){
+        document.getElementById('i1').src = "img/1-Game-of-thrones.jpg"
+        document.getElementById('i2').src = "img/2-breaking-bad.jpg"
+        document.getElementById('i3').src = "img/3-sherlock.jpg"
+        document.getElementById('i4').src = "img/4-stranger-things.jpg"
+        document.getElementById('i5').src = "img/5-attack.jpg"
+        document.getElementById('i6').src = "img/5-gravity.jpg"
+    }
+    function voltarFoto(){
+        document.getElementById('i1').src = "img/1-Game-of-thrones-preto-branco.jpg"
+        document.getElementById('i2').src = "img/2-breaking-bad-preto-branco.jpg"
+        document.getElementById('i3').src = "img/3-sherlock-preto-branco.jpg"
+        document.getElementById('i4').src = "img/4-stranger-things-preto-branco.jpg"
+        document.getElementById('i5').src = "img/5-attack-preto-branco.jpg"
+        document.getElementById('i6').src = "img/5-gravity-preto.jpg"
+    }
+    $()
+</script>
+<title>Site</title>
+</head>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">  <!-- cabeçalho-->
+        <div class="bg-dark p-4">
+          <a class="text-white h4" href="index.html">Inicio</a>
+          <a class="text-white h4" href="Quiz.html">Quiz</a>
+          <a class="text-white h4" href="Tabela.html">Tabela de Avaliação</a>
+          <a class="text-white h4" href="Form.html">Cadastro</a>
+          <hr style="color: white;">
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark" id="span">
+        <img src="img/potter-png-4.png" style="width: 50px; position: absolute; left: 100px;">
+          
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-md-4">
+            <h3 style="text-align: center; font-size: 30pt;" class="display-4" >Menu</h3>
+            <div class="list-group text-center">   <!-- cria uma lista de links -->
+              <a href="index.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Inicio</a>
+              <a href="Quiz.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35); ">Quiz</a>
+              <a href="Tabela.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Tabela</a>
+              <a href="Pagina1.html" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Formulário</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <img src="img/site.png" style="width: 90px; float: left;">
+              <img src="img/site.png" style="width: 90px; float: right;">
+              <h1 class="display-4" style="text-align: center;">Séries</h1>
+              <h1 class="display-4" style="text-align: center;">Interessantes </h1>
+              <p style="text-align: center;">Algumas séries que vale a pena voce dá uma olhada :)</p>
+          </div>
+          <div class="col-md-4">
+             <!--
+            <h3 style="text-align: center; font-size: 30pt;" class="display-4" >Social</h3>
+            <div class="btn-group-vertical btn-group-lg" role="group"> cria uma lista de botões 
+              <a class="btn btn-primary btn-dark " href="">LinkdIn</a>
+              <a class="btn btn-primary btn-dark btn-sm" href="">GitHub</a>
+            -->
+            <h3 style="text-align: center; font-size: 30pt;" class="display-4" >Social</h3>
+            <div class="list-group text-center">   <!-- cria uma lista de links -->
+              <a href="" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">LinkedIn</a>
+              <a href="" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35); ">Github</a>
+              <a href="" class="list-group-item list-grou-item-action" style="background-color: rgb(36, 35, 35);">Instagram</a>
+            </div>
+            </div>
+          </div>
+      </div>
+      <hr>
+  </div>
+    <div class="container"> <!-- implementação do grid-->
+        <div class="row"> <!-- implementação do grid-->
+            <div class="col-md-12"> <!-- implementação do grid-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!-- estrutura do carousel-->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner"> 
+                        <div class="carousel-item active"> <!-- intens dentro do carousel - 1 pagina-->
+                          <div class="row">
+                              <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area mx-lg-5">
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#got"><img src="img/1-Game-of-thrones-preto-branco.jpg" class="img-responsive"  id="i1" onmouseover="mudarFoto()" onmouseout="voltarFoto()"></a>
+                                    </div>
+                                    <div class="img-text">
+                                        <h2><a href="#" data-bs-toggle="modal" data-bs-target="#got">Game Of Thrones</a></h2>
+                                        <p>Mundo medieval, Dragões gigantes, multíplos reinos. O jogo dos tronos é uma história visseral e bastante intrigante com reviravoltas a toda hora.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area mx-lg-5">
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#bd"><img src="img/2-breaking-bad-preto-branco.jpg" class="img" id="i2" onmouseover="mudarFoto()" onmouseout="voltarFoto()"></a>
+                                    </div>
+                                    <div class="img-text">
+                                        <h2><a href="#" data-bs-toggle="modal" data-bs-target="#bd">Breaking Bad</a></h2>
+                                        <p>Já parou pra pensar: e se um professor de Quimica fizesse drogas e acabasse virando um dos maiores criminosos do mundo? não? breaking bad conta essa história com um roteiro e atuações espetaculares.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area mx-lg-5">
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#sh"><img src="img/3-sherlock-preto-branco.jpg" class="img" id="i3" onmouseover="mudarFoto()" onmouseout="voltarFoto()"></a>
+                                    </div>
+                                    <div class="img-text">
+                                        <h2><a href="#" data-bs-toggle="modal" data-bs-target="#sh">Sherlock</a></h2>
+                                        <p>Acompanhamos uma nova forma de ver os feitos do maior e melhor detetive do mundo, com os peronagens clássicos vivendo na londres do século 21, para amantes de series de investigação é um prato cheio. </p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item"> <!-- intens dentro do carousel - 2 pagina-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="single-box">
+                                      <div class="img-area mx-lg-5">
+                                          <a  href="#" data-bs-toggle="modal" data-bs-target="#st"><img src="img/4-stranger-things-preto-branco.jpg" class="img" id="i4" onmouseover="mudarFoto()" onmouseout="voltarFoto()"></a>
+                                      </div>
+                                      <div class="img-text">
+                                        <h2><a href="#" data-bs-toggle="modal" data-bs-target="#st">Stranger Things</a></h2>
+                                          <p>Crianças começam a achar eventos totalmente estranhos na sua cidade do interior tendo que se unirem para acabar com esses tais problemas, a ambientação nos anos 80 ajuda a manter uma crescente nostalgia.</p>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="single-box">
+                                      <div class="img-area mx-lg-5">
+                                          <a  href="#" data-bs-toggle="modal" data-bs-target="#aot"><img src="img/5-attack-preto-branco.jpg" class="img" id="i5" onmouseover="mudarFoto()" onmouseout="voltarFoto()"></a>
+                                      </div>
+                                      <div class="img-text">
+                                        <h2><a href="#" data-bs-toggle="modal" data-bs-target="#aot">Attack on Titans</a></h2>
+                                          <p>Titans Gigantes e pelados que comem pessoas entram nas muralhas que a mais de 1000 anos se veem a merce desses predadores, sendo os unicos sobreviventes humanos nesse mundo, reviravoltas na trama mudam totalmente nossa visão, fazendo desse um dos melhores animes da atualidade.</p>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="single-box">
+                                      <div class="img-area mx-lg-5">
+                                          <a  href="#" data-bs-toggle="modal" data-bs-target="#gf"><img src="img/5-gravity-preto.jpg" class="img" id="i6" onmouseover="mudarFoto()" onmouseout="voltarFoto()"></a>
+                                      </div>
+                                      <div class="img-text">
+                                        <h2><a href="#" data-bs-toggle="modal" data-bs-target="#gf">Gravity Falls</a></h2>
+                                          <p>Dois adolescentes passam as ferias de verão com seu tio num lugar onde coisas estranhas e bizarras acontecem, acompanhamos os jovens desvendando os segredos que enolvem esses variados mistérios.</p>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center my-4"> <!-- my = espaçamento externo-->
+                <h1 class="display-4">Pequeno Resumo</h1>
+                <p>Um pouco mais sobre as séries</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"> 
+                <div id="list-example" class="list-group"> <!-- scroolpy - quando voce apertar no link vai para a parte selecionada pelo scroll na página -->
+                    <a class="list-group-item list-group-item-action my-2" style="font-weight: bold; border-radius: 15px;" href="#list-item-1">Game of Thrones</a>
+                    <a class="list-group-item list-group-item-action my-2" style="font-weight: bold; border-radius: 15px;"  href="#list-item-2">Breaking Bad</a>
+                    <a class="list-group-item list-group-item-action my-2" style="font-weight: bold; border-radius: 15px;"  href="#list-item-3">Sherlock</a>
+                    <a class="list-group-item list-group-item-action my-2" style="font-weight: bold; border-radius: 15px;"  href="#list-item-4">Stranger Things</a>
+                    <a class="list-group-item list-group-item-action my-2" style="font-weight: bold; border-radius: 15px;"  href="#list-item-5">Attack on Titans</a>
+                    <a class="list-group-item list-group-item-action my-2" style="font-weight: bold; border-radius: 15px;"  href="#list-item-6">Gravity Falls</a>
+                  </div>
+            </div>
+            <div class="col-md-9">
+                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                    <h4 id="list-item-1">Game of Thrones</h4>
+                    <p>
+                    Série de 2011 baseada nos livros: "As cônicas de gelo e fogo" do autor  George R. R. Martin.
+                    Muito aguardada desde seus primeiros estágios de desenvolvimento, Game of Thrones foi muito bem recebida pela crítica especializada. Sua primeira temporada foi indicada em vários prêmios, incluindo o Emmy do Primetime de melhor série de drama e o Globo de Ouro de melhor série dramática; Peter Dinklage, que interpreta Tyrion Lannister, venceu o Emmy do Primetime de melhor ator coadjuvante em série dramática e o Globo de Ouro de melhor ator coadjuvante em série de televisão. A série também conquistou o Emmy de melhor projeto de créditos principais, e possui uma das melhores notas entre os telespectadores para séries em exibição no site IMDb. Game of Thrones ganhou 59 Emmys, mais do que qualquer outra série de televisão</p>
+                    <h4 id="list-item-2">Breaking Bad</h4>
+                    <p>A série foi originalmente exibida pelo canal de televisão por assinatura AMC, onde estreou no dia 20 de Janeiro de 2008 e, depois de cinco temporadas de sucesso, teve seu último episódio transmitido no dia 29 de Setembro de 2013. Em Portugal, foi exibida pelos canais SIC Radical, TVséries e MOV. No Brasil, o seriado é exibido pelo canal pago AXN, pelo serviço de streaming Netflix e, na TV aberta, pela Rede Record. A sério ainda teve um Spinn-Off chamado "EL Camino", constanto a história pós fim da série.</p>
+                    <h4 id="list-item-3">Sherlock</h4>
+                    <p>Sherlock é uma série de televisão britânica de drama policial baseada nas histórias do detetive Sherlock Holmes escritas por Sir Arthur Conan Doyle. Criada por Steven Moffat e Mark Gatiss, foi estrelado por Benedict Cumberbatch como Sherlock Holmes e Martin Freeman como o Doutor John Watson. Sendo exibida desde 25 de julho de 2010, já foram produzidos treze episódios para série, transmitidos em quatro temporadas de três episódios cada, além de um especial exibido no início de 2016.Sério bastante aclamado peplo publico e pela critica especializada, porém está em iato devido a agenda corrido do ator principal.</p>
+                    <h4 id="list-item-4">Stranger Things</h4>
+                    <p>Stranger Things é uma série de televisão americana dos gêneros ficção científica, terror, suspense e drama adolescente criada, escrita e dirigida pelos irmãos Matt e Ross Duffer para a plataforma Netflix. Os irmãos Duffer, Shawn Levy e Dan Cohen são também os produtores executivos.Ambientada na cidade fictícia de Hawkins, no estado de Indiana na década de 1980, a trama da primeira temporada se passa no ano de 1983 e concentra-se do desaparecimento do estudante Will Byers, e apresenta a jornada de seus amigos para o encontrarem, até que no caminho, encontram uma estranha garota com poderes telecinéticos, que escapou de um laboratório que usava crianças como cobaias para experimentos sobrenaturais. Atualmente existe 4 temporadas. </p>
+                    <h4 id="list-item-5">Attack on Titans</h4>
+                    <p>Shingeki no Kyojin ou Attack on Titans é uma série de mangá escrita e ilustrada por Hajime Isayama. O mangá foi publicado pela primeira vez em setembro de 2009 na revista mensal Bessatsu Shōnen Magazine. Desde então, os capítulos são compilados e lançados pela editora Kodansha. No Brasil, o mangá é licenciado e publicado pela editora Panini Comics desde novembro de 2013, e em Portugal é publicado pela JBC desde setembro de 2018. A história gira em torno do personagem Eren Yeager em um mundo onde a humanidade vive rodeada por enormes muralhas para se proteger de criaturas gigantescas, os Titãs. A história narra a luta da humanidade para recuperar seu território, e esclarecer os mistérios ligados ao aparecimento dos Titãs. Atualmente está na sua 4 e ultima temporada.</p>
+                    <h4 id="list-item-6">Gravity Falls</h4>
+                    <p>Gravity Falls (ou Gravity Falls: Um Verão de Mistérios) é uma série de televisão animada americana criada por Alex Hirsch, produzida pela Disney Television Animation originalmente para o Disney Channel (e depois para a Disney XD) de 15 de junho de 2012 a 15 de fevereiro de 2016.</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="got" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Game Of Thrones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-modal">  <!-- usar grid no modal -->
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Metacritic</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 28px; top: 64px;">8.6</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5>IMDb</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 275px; top: 65px;">9.3</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="bd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Breaking Bad</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-modal">  <!-- usar grid no modal -->
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Metacritic</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 28px; top: 64px;">8.7</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5>IMDb</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 275px; top: 65px;">9.5</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="sh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sherlock</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-modal">  <!-- usar grid no modal -->
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Metacritic</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 28px; top: 64px;">8.8</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5>IMDb</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 275px; top: 65px;">9.1</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="st" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Stranger Things</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-modal">  <!-- usar grid no modal -->
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Metacritic</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 28px; top: 64px;">7.5</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5>IMDb</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 275px; top: 65px;">8.7</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="aot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Attack on Titans</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-modal">  <!-- usar grid no modal -->
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Rotten Tomatoes</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 28px; top: 64px;">9.4</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5>IMDb</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 275px; top: 65px;">8.9</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="gf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Gravity Falls</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-modal">  <!-- usar grid no modal -->
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Metacritic</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 28px; top: 64px;">8.1</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5>IMDb</h5>
+                        <img src="img/notai.png" style="width: 50px; float: left;">
+                        <h6 style="position: absolute; left: 275px; top: 65px;">8.9</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer> <!-- o rodapé -->
+        <hr>
+        <h1 class="display-4" style="text-align: center; font-size: 20pt;">&copy; Luan Saturnino</h1>
+      </footer>
+</body>
+=======
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meu primeiro Hello World! </title>
+	</head>
+
+	<h1> Hello Word!</h1>
+
+	<p> Essa é minha primeira página na web </p>
+
+>>>>>>> 8fc005d127ceb0e8275def38e2bb5a7adfcb11c7
+</html>

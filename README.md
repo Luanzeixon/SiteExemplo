@@ -1,6 +1,2 @@
-# SiteExemplo
- Primeiro site criado para teste.
- 
- Teste de README modificação (versionar).
- 
- Modificação no site.
+# Site de Series
+ Trabalho para matéria.
